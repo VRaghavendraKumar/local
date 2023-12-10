@@ -29,7 +29,7 @@ struct node* create(int n)
         ptr->link=newnode;
         ptr=newnode;
     }
-    
+
     }
     ptr->link=NULL;
     return head;
@@ -78,7 +78,7 @@ struct node* insertend(struct node *head,int a)
     }
     else
     {
-    
+
     struct node *ptr=NULL;
     ptr=head;
     while(ptr->link!=NULL)
@@ -117,7 +117,7 @@ struct node* insertmiddle(struct node *head,int a,int p)
         ptr=ptr->link;
     }
     newnode->link=ptr->link;
-    ptr->link=newnode; 
+    ptr->link=newnode;
     printf("\nnode inserted at middle") ;
     return head;
 }
@@ -164,10 +164,10 @@ struct node* deleteend(struct node *head)
             temp1=temp1->link;
         }
         temp2->link=NULL;
-    
+
         free(temp1);
         printf("\nlast node deleted ");
-        return head; 
+        return head;
     }
 }
 struct node* deletemiddle(struct node* head,int p)
@@ -254,7 +254,7 @@ struct node *insertsort(struct node *head,int a)
     {
         temp=temp->link;
     }
-    
+
     newnode->link=temp->link;
     temp->link=newnode;
     return head;
@@ -288,4 +288,3 @@ int main()
    // head=reverse(head);
     display(head);
 }
-   
